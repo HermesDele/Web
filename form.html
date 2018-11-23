@@ -6,6 +6,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script>
+	  UPLOADCARE_PUBLIC_KEY = "2275511ba53bb7d32e60";
+	</script>
+	<script charset="utf-8" src="//ucarecdn.com/libs/widget/3.6.1/uploadcare.full.min.js"></script>
 	</head>
 	<body class="is-preload">
 		<!-- Wrapper -->
@@ -59,7 +63,7 @@
                       <textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
                     </div>
 										<div class="col-12">
-                      <input name="demo-file" type="file" id="demo-file" placeholder="file" value=""></input>
+											<input type="hidden" role="uploadcare-uploader" name="content" data-images-only="true" />
                     </div>
                     <div class="col-12">
                       <ul class="actions">
